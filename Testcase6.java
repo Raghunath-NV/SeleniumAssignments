@@ -27,8 +27,6 @@ public class Testcase6 {
 		for (int index = 0; index < rowData.size(); index++) {
 			WebElement element = rowData.get(index);
 			if (element.getText().contains("Cognizant")) {
-				// element.findElement(By.xpath("//td/input")).click(); //want
-				// to know why this is not working
 				element.findElement(By.tagName("input")).click();
 			}
 
